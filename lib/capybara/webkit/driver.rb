@@ -291,8 +291,8 @@ module Capybara::Webkit
     end
 
     def save_screenshot(path, options={})
-      options[:width]  ||= 1000
-      options[:height] ||= 700
+      options[:width]  ||= 1800
+      options[:height] ||= 1200
 
       @browser.render path, options[:width], options[:height]
     end
